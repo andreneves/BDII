@@ -1,41 +1,32 @@
-# Banco de Dados 2
-Material da disciplina de Banco de Dados 2
+# BDII
+> Banco de dados II
 
-# 01
 
-```
-CREATE DATABASE
-```
+## BDII00
+SGBD: https://www.mysql.com/
+MySQL :: MySQL 8.0 Reference Manual: https://dev.mysql.com/doc/refman/8.0/en/
+XAMPP
+workbench
+documentação
 
-```
-DROP DATABASE
-```
+## BDIIA01
+* CREATE DATABASE
+* DROP DATABASE
 
-```
+* Revisão tipo de dados
+
+
+## BDIIA02
 CREATE TABLE
-```
-```
 DROP TABLE
-```
-```
 TRUNCATE TABLE
-```
 
-```
+
+
+
+
 ALTER TABLE
-```
-```
 ADD
-```
-```
 ALTER
-```
-```
 DROP
-```
-```
 MODIFY
-```
-
-# 02
-

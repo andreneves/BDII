@@ -1,10 +1,10 @@
--- BANCO DE DADOS - 2
+-- BDIIA02
 
--- CREATE DATABASE NomeDoBancoDeDados; 
+DROP DATABASE bd2;
 CREATE DATABASE bd2;
 
--- DROP DATABASE NomeDoBancoDeDados; 
-DROP DATABASE bd2;
+USE bd2;
+
 
 -- TABELA
 /*
@@ -16,7 +16,7 @@ CREATE TABLE NomeDaTabela (
 );
 */
 
-CREATE TABLE cliente (
+CREATE TABLE clientes (
     id int,
     nome varchar(255),
     sobrenome varchar(255),
@@ -25,9 +25,9 @@ CREATE TABLE cliente (
 );
 
 -- DROP TABLE NomeDaTabela; 
-DROP TABLE cliente; -- deleta a tabela
+DROP TABLE clientes; -- deleta a tabela
 
-TRUNCATE TABLE cliente; -- limpa todos os dados, mas preserva a estrutura da tabela
+TRUNCATE TABLE clientes; -- limpa todos os dados, mas preserva a estrutura da tabela
 
 
 
