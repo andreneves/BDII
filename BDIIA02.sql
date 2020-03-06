@@ -16,6 +16,7 @@ CREATE TABLE NomeDaTabela (
 );
 */
 
+
 CREATE TABLE clientes (
     id int,
     nome varchar(255),
@@ -24,7 +25,7 @@ CREATE TABLE clientes (
     cidade varchar(255)
 );
 
--- DROP TABLE NomeDaTabela; 
+-- DROP TABLE NomeDaTabela;
 DROP TABLE clientes; -- deleta a tabela
 
 TRUNCATE TABLE clientes; -- limpa todos os dados, mas preserva a estrutura da tabela
@@ -42,7 +43,7 @@ CREATE TABLE produtos (
 
 -- ADD
 -- ALTER TABLE NomeDaTabela
--- ADD NomeDaColuna tipo; 
+-- ADD NomeDaColuna tipo;
 
 ALTER TABLE produtos
 ADD descricao TEXT;
@@ -52,7 +53,7 @@ ADD valor float;
 
 -- DROP COLUMN
 -- ALTER TABLE NomeDaTabela
--- DROP COLUMN NomeDaColuna; 
+-- DROP COLUMN NomeDaColuna;
 ALTER TABLE produtos
 DROP COLUMN descricao;
 
