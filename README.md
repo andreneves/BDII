@@ -9,7 +9,7 @@
 `SGBD :: MySql 8.0 Reference Manual` : <https://dev.mysql.com/doc/refman/8.0/en/>
 
 # Ferramentas
-`XAMPP` : <https://www.apachefriends.org/pt_br/index.html>/n
+`XAMPP` : <https://www.apachefriends.org/pt_br/index.html>
 `Workbench` : <https://www.mysql.com/products/workbench/>
 
 
@@ -20,6 +20,10 @@
 # Revisão tipo de dados
 `Data types` : <https://dev.mysql.com/doc/refman/8.0/en/data-types.html>
 
+Imagens ilustrativas
+![](https://github.com/andreneves/BDII/blob/master/imagens/tipos_de_dados-tipos_primitivos.jpg)
+![](https://github.com/andreneves/BDII/blob/master/imagens/tipos_de_dados-tipos_primitivos2.jpg)
+![](https://github.com/andreneves/BDII/blob/master/imagens/tipos_de_dados-tipos_primitivos3.jpg)
 
 
 ## BDIIA02
