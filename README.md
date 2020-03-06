@@ -9,7 +9,7 @@
 `SGBD :: MySql 8.0 Reference Manual` : <https://dev.mysql.com/doc/refman/8.0/en/>
 
 # Ferramentas
-`XAMPP` : <https://www.apachefriends.org/pt_br/index.html>
+`XAMPP` : <https://www.apachefriends.org/pt_br/index.html>/n
 `Workbench` : <https://www.mysql.com/products/workbench/>
 
 
