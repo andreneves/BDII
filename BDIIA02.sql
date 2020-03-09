@@ -19,10 +19,11 @@ CREATE TABLE NomeDaTabela (
 
 CREATE TABLE clientes (
     id int,
-    nome varchar(255),
-    sobrenome varchar(255),
+    nome varchar(100),
+    sobrenome varchar(100),
     endereco varchar(255),
-    cidade varchar(255)
+    cidade varchar(50),
+    UF varchar(2)
 );
 
 -- DROP TABLE NomeDaTabela;
