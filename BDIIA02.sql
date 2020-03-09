@@ -26,6 +26,9 @@ CREATE TABLE clientes (
     UF varchar(2)
 );
 
+-- RENAME TABLE
+RENAME TABLE clientes TO Meus_Clientes;
+
 -- DROP TABLE NomeDaTabela;
 DROP TABLE clientes; -- deleta a tabela
 
