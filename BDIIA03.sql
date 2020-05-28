@@ -10,6 +10,14 @@ CREATE TABLE produtos (
 	nome varchar(80) NOT NULL
 );
 
+-- inserindo dados para testar
+insert into (nome) values ('camisa');
+insert into (nome) values ('calça');
+insert into (nome) values ('meia');
+
+-- selecionando dados para testar
+select * from produtos;
+
 -- ALTER TABLE
 
 -- ADD
