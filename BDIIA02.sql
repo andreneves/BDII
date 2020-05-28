@@ -32,40 +32,7 @@ RENAME TABLE clientes TO Meus_Clientes;
 -- DROP TABLE NomeDaTabela;
 DROP TABLE clientes; -- deleta a tabela
 
-TRUNCATE TABLE clientes; -- limpa todos os dados, mas preserva a estrutura da tabela
+ -- limpa todos os dados, mas preserva a estrutura da tabela
+TRUNCATE TABLE clientes;
 
 
-
----------------------------
-
-AULA 3
-
-
-CREATE TABLE produtos (
-	id INT PRIMARY KEY AUTO_INCREMENT,
-	nome varchar(80) NOT NULL
-)
-
-
-
--- ALTER TABLE
-
--- ADD
--- ALTER TABLE NomeDaTabela
--- ADD NomeDaColuna tipo;
-
-ALTER TABLE produtos
-ADD descricao TEXT;
-
-ALTER TABLE produtos
-ADD valor float;
-
--- DROP COLUMN
--- ALTER TABLE NomeDaTabela
--- DROP COLUMN NomeDaColuna;
-ALTER TABLE produtos
-DROP COLUMN descricao;
-
--- MODIFY
-ALTER TABLE produtos
-MODIFY COLUMN descricao varchar(255);
