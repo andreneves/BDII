@@ -41,6 +41,8 @@ ALTER TABLE produtos
 DROP COLUMN descricao;
 
 
--- MODIFY
+-- MODIFY COLUMN 
+-- ALTER TABLE NomeDaTabela
+-- MODIFY COLUMN NomeDaColuna tipo;
 ALTER TABLE produtos
 MODIFY COLUMN observacao varchar(255);
