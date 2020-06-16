@@ -28,8 +28,8 @@ ADD CONSTRAINT restrição;
 -----------------------------------------------------------------------------------------
 
 -- São retrições: 
--- NOT NULL - garante que uma coluna não possa ter um valor NULL
--- UNIQUE - Garante que todos os valores em uma coluna sejam diferentes
+-- NOT NULL - a coluna não pode ser nula (null)
+-- UNIQUE   - Garante que todos os valores em uma coluna sejam diferentes (sem valores repetidos)
 -- PRIMARY KEY  - Uma combinação de NOT NOT NULL e UNIQUE. Identifica exclusivamente cada linha em uma tabela
 -- FOREIGN KEY  - Identifica exclusivamente uma linha / registro em outra tabela
 -- CHECK - Garante que todos os valores em uma coluna satisfaçam uma condição específica
