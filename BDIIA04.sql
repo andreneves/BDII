@@ -37,6 +37,11 @@ ADD CONSTRAINT restrição;
 -- INDEX - Usado para criar e recuperar dados do banco de dados muito rapidamente
 
 -----------------------------------------------------------------------------------------
+
+-- OBS:
+-- Para verficar as modificações na tabela do banco de dados
+SHOW COLUMNS FROM produtos;
+
 -- EXEMPLO
 
 -- na criação
@@ -52,7 +57,6 @@ CREATE TABLE produtos (
 	id INT,
 	nome varchar(80) NOT NULL
 );
-
 
 ALTER TABLE produtos
 ADD CONSTRAINT PRIMARY KEY (id);
