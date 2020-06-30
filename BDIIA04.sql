@@ -34,7 +34,6 @@ ADD CONSTRAINT restrição;
 -- FOREIGN KEY  - Identifica exclusivamente uma linha / registro em outra tabela
 -- CHECK - Garante que todos os valores em uma coluna satisfaçam uma condição específica
 -- DEFAULT - Define um valor padrão para uma coluna quando nenhum valor é especificado
--- INDEX - Usado para criar e recuperar dados do banco de dados muito rapidamente
 
 -----------------------------------------------------------------------------------------
 

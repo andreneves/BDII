@@ -17,7 +17,6 @@ USE bd2;
 -- FOREIGN KEY  - Identifica exclusivamente uma linha / registro em outra tabela
 -- CHECK - Garante que todos os valores em uma coluna satisfaçam uma condição específica
 -- DEFAULT - Define um valor padrão para uma coluna quando nenhum valor é especificado
--- INDEX - Usado para criar e recuperar dados do banco de dados muito rapidamente
 
 
 -- OBS:
@@ -35,11 +34,9 @@ CREATE TABLE alunos (
 	nome varchar(80) NOT NULL
 ); 
 
-
 insert into alunos (nome) values (null);
 
 -- alteração
-
 CREATE TABLE funcionarios (
 	id INT PRIMARY KEY AUTO_INCREMENT,
 	nome varchar(80)
@@ -77,6 +74,9 @@ CREATE TABLE usuarios (
 ALTER TABLE usuarios
 ADD UNIQUE (email); 
 
+insert into usuarios (nome, email) values ('André', 'andr@andr.com.br');
+insert into usuarios (nome, email) values ('André 2', 'andr@andr.com.br');
+
 -- OBS.: No caso de multiplas colunas
 -- ALTER TABLE tabela
 -- ADD CONSTRAINT nome_da_constraint UNIQUE (campo1, campo2); 
@@ -108,7 +108,6 @@ CREATE TABLE usuarios (
 );
 
 -- Multiplas colunas - chave primária composta
-
 CREATE TABLE usuarios (
     id INT AUTO_INCREMENT,
     nome varchar(255) NOT NULL,
@@ -144,7 +143,7 @@ DROP PRIMARY KEY;
 -- É um, ou mais campos, de uma tabela que se referem a chave primária de outra tabela.
 -- A tabela que contém a chave é chamada de tabela filho e a tabela que contém a chave candidata é chamada de tabela pai.
 
--- create table
+-- na criação
 CREATE TABLE `categorias` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `nome` varchar(200) NOT NULL,

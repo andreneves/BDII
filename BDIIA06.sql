@@ -17,7 +17,6 @@ USE bd2;
 -- FOREIGN KEY  - Identifica exclusivamente uma linha / registro em outra tabela
 -- CHECK - Garante que todos os valores em uma coluna satisfaçam uma condição específica
 -- DEFAULT - Define um valor padrão para uma coluna quando nenhum valor é especificado
--- INDEX - Usado para criar e recuperar dados do banco de dados muito rapidamente
 
 
 -- OBS:
@@ -31,8 +30,7 @@ SHOW COLUMNS FROM alunos;
 -- É usada para limitar os valores de uma coluna.
 -- Pode ser aplicada em uma coluna ou tabela.
 
--- criacao
-
+-- na criação
 -- uma coluna
 CREATE TABLE alunos (
     id int PRIMARY KEY auto_increment,
@@ -42,6 +40,10 @@ CREATE TABLE alunos (
     CHECK (idade >= 18)
 ); 
 
+insert into alunos (nome, cidade, idade) values ('André', 'São Paulo', 19);
+insert into alunos (nome, cidade, idade) values ('Paulo', 'São Paulo', 16);
+
+-- na criação
 -- varias colunas
 CREATE TABLE alunos (
     id int PRIMARY KEY auto_increment,
@@ -51,6 +53,9 @@ CREATE TABLE alunos (
     CONSTRAINT CHK_Alunos CHECK (idade >= 18 AND cidade = 'Rio de Janeiro')
 ); 
 
+insert into alunos (nome, cidade, idade) values ('André', 'Rio de Janeiro', 19);
+insert into alunos (nome, cidade, idade) values ('Henrique', 'São Paulo', 19);
+insert into alunos (nome, cidade, idade) values ('Paulo', 'São Paulo', 16);
 
 -- alteracao
 CREATE TABLE alunos (
@@ -79,7 +84,7 @@ DROP CHECK CHK_Alunos;
 -- valor padrão da coluna
 -- o campo é preenchido automaticamente caso não seja declarado um valor
 
--- criação
+-- na criação
 CREATE TABLE alunos (
     id int PRIMARY KEY auto_increment,
     nome varchar(255) NOT NULL,
@@ -87,6 +92,7 @@ CREATE TABLE alunos (
     idade int
 ); 
 
+insert into alunos (nome, idade) values ('André', 19);
 
 -- na alteração
 CREATE TABLE alunos (
@@ -96,34 +102,13 @@ CREATE TABLE alunos (
     idade int
 ); 
 
-
 ALTER TABLE alunos
 ALTER cidade SET DEFAULT 'Rio de Janeiro'; 
+
+insert into alunos (nome, idade) values ('André', 19);
 
 -- drop
 ALTER TABLE alunos
 ALTER cidade DROP DEFAULT; 
 
 
--- ------------------------------------------------------------------------------------------------------------------
-
--- index
--- usado para otimizar consultas
--- perde desempenho na inserção e atualização
-
-CREATE TABLE alunos (
-    id int PRIMARY KEY auto_increment,
-    nome varchar(255) NOT NULL,
-    cidade varchar(255) NOT NULL DEFAULT 'Rio de Janeiro',
-    idade int
-); 
-
-
--- criacao
-CREATE INDEX idx_nome
-ON alunos (nome); 
-
-
--- drop
-ALTER TABLE alunos
-DROP INDEX idx_nome; 
