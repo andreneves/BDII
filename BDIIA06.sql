@@ -112,3 +112,18 @@ ALTER TABLE alunos
 ALTER cidade DROP DEFAULT; 
 
 
+
+-- exemplo com default now()
+
+create table inscricoes (
+    id int(11) primary key auto_increment,
+    nome varchar(255) not null,
+    data datetime not null default now()
+);
+
+insert into inscricoes (nome) values ('André');
+insert into inscricoes (nome) values ('Diego');
+insert into inscricoes (nome) values ('Elisa');
+insert into inscricoes (nome) values ('Carmen');
+
+select * from inscricoes;
