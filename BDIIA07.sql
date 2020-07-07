@@ -25,7 +25,6 @@ CREATE TABLE alunos (
 
 select * from alunos;
 
-/*
 -- criacao
 CREATE INDEX idx_nome
 ON alunos (nome); 
@@ -33,15 +32,14 @@ ON alunos (nome);
 
 explain select nome from alunos;
 
-select SQL_NO_CACHE nome from alunos;
-
+select SQL_NO_CACHE nome from alunos
+where nome = 'Aluno298';
 
 
 -- drop
 ALTER TABLE alunos
 DROP INDEX idx_nome; 
 
-*/
 
 
 
