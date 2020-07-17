@@ -46,3 +46,10 @@ DROP COLUMN descricao;
 -- MODIFY COLUMN NomeDaColuna tipo;
 ALTER TABLE produtos
 MODIFY COLUMN observacao varchar(255);
+
+
+-- CHANGE
+-- ALTER TABLE NomeDaTabela
+-- MODIFY COLUMN NomeDaColuna NovoNomeDaColuna tipo;
+ALTER TABLE produtos 
+CHANGE observacao obs varchar(255);
