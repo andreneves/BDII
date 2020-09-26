@@ -35,4 +35,3 @@ DROP TABLE clientes; -- deleta a tabela
  -- limpa todos os dados, mas preserva a estrutura da tabela
 TRUNCATE TABLE clientes;
 
-
