@@ -18,10 +18,29 @@ insert into (nome) values ('meia');
 -- selecionando dados para testar
 select * from produtos;
 
--- ALTER TABLE
 
--- ADD
--- ALTER TABLE NomeDaTabela
+
+
+-----------------
+-- ALTER TABLE --
+-----------------
+
+-- Explicação: ALTER TABLE é responsável por modificar a estrutura da tabela, podendo acrescentar, excluir e alterar campos.
+-- OBS.: Para fins didáticos vamos criar a tabela abaixo para poder testar o conceito.
+
+-- Não esqueça de conferir o resultado de cada comando na estrutura de sua tabela utilizando o comando:
+-- SHOW COLUMNS FROM nomeDaTabela
+
+
+
+---------
+-- ADD --
+---------
+
+-- Explicação: Adiciona um campo a tabela.
+
+-- Sintaxe: 
+-- ALTER TABLE nomeDaTabela
 -- ADD NomeDaColuna tipo;
 
 ALTER TABLE produtos
@@ -34,22 +53,44 @@ ALTER TABLE produtos
 ADD observacao varchar(80);
 
 
--- DROP COLUMN
+
+-----------------
+-- DROP COLUMN --
+-----------------
+
+-- Explicação: Destrói um campo da tabela.
+
+-- Sintaxe: 
 -- ALTER TABLE NomeDaTabela
 -- DROP COLUMN NomeDaColuna;
+
 ALTER TABLE produtos
 DROP COLUMN descricao;
 
 
--- MODIFY COLUMN 
+
+-------------------
+-- MODIFY COLUMN --
+-------------------
+
+-- Explicação: Modifica um campo da tabela
+
+-- Sintaxe: 
 -- ALTER TABLE NomeDaTabela
 -- MODIFY COLUMN NomeDaColuna tipo;
+
 ALTER TABLE produtos
 MODIFY COLUMN observacao varchar(255);
 
 
--- CHANGE
+
+------------
+-- CHANGE --
+------------
+
+-- Sintaxe: 
 -- ALTER TABLE NomeDaTabela
 -- MODIFY COLUMN NomeDaColuna NovoNomeDaColuna tipo;
+
 ALTER TABLE produtos 
 CHANGE observacao obs varchar(255);

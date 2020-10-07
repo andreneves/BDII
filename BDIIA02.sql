@@ -5,6 +5,13 @@ CREATE DATABASE bd2;
 
 USE bd2;
 
+------------------
+-- CREATE TABLE --
+------------------
+
+-- Explicação: Cria uma nova tabela no banco de dados selecionado.
+
+-- Sintaxe:
 
 -- TABELA
 /*
@@ -16,6 +23,7 @@ CREATE TABLE NomeDaTabela (
 );
 */
 
+-- Exemplo: 
 
 CREATE TABLE clientes (
     id int,
@@ -26,12 +34,46 @@ CREATE TABLE clientes (
     UF varchar(2)
 );
 
--- RENAME TABLE
+
+------------------
+-- RENAME TABLE --
+------------------
+
+-- Explicação: Renomeia uma tabela do banco de dados selecionado.
+-- Sintaxe: 
+
+-- RENAME TABLE NomeDaTabela; 
+
 RENAME TABLE clientes TO Meus_Clientes;
 
--- DROP TABLE NomeDaTabela;
+
+
+----------------
+-- DROP TABLE --
+----------------
+
+-- Explicação: Destrói uma tabela do banco de dados selecionado.
+-- Sintaxe: 
+
+-- DROP TABLE NomeDaTabela; 
+
+
+-- Exemplo: 
+
 DROP TABLE clientes; -- deleta a tabela
 
- -- limpa todos os dados, mas preserva a estrutura da tabela
+
+--------------------
+-- TRUNCATE TABLE --
+--------------------
+
+-- Explicação: Limpa todos os dados, mas preserva a estrutura da tabela.
+-- Sintaxe: 
+
+-- TRUNCATE TABLE NomeDaTabela; 
+
+
+-- Exemplo: 
+
 TRUNCATE TABLE clientes;
 
