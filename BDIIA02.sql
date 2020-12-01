@@ -67,7 +67,7 @@ DROP TABLE clientes; -- deleta a tabela
 -- TRUNCATE TABLE --
 --------------------
 
--- Explicação: Limpa todos os dados, mas preserva a estrutura da tabela.
+-- Explicação: Limpa todos os dados, mas preserva a estrutura da tabela. Também volta o auto_increment para o status inicial.
 -- Sintaxe: 
 
 -- TRUNCATE TABLE NomeDaTabela; 
