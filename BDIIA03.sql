@@ -11,9 +11,10 @@ CREATE TABLE produtos (
 );
 
 -- inserindo dados para testar
-insert into (nome) values ('camisa');
-insert into (nome) values ('calça');
-insert into (nome) values ('meia');
+insert into produtos (nome) values ('camisa');
+insert into produtos (nome) values ('calça');
+insert into produtos (nome) values ('meia');
+
 
 -- selecionando dados para testar
 select * from produtos;
