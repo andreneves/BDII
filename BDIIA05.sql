@@ -143,6 +143,10 @@ DROP PRIMARY KEY;
 -- É um, ou mais campos, de uma tabela que se referem a chave primária de outra tabela.
 -- A tabela que contém a chave é chamada de tabela filho e a tabela que contém a chave candidata é chamada de tabela pai.
 
+
+-- -->> AQUI 210517
+
+
 -- na criação
 CREATE TABLE `categorias` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
