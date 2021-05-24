@@ -148,28 +148,27 @@ DROP PRIMARY KEY;
 
 
 -- na criação
-CREATE TABLE categorias (
-  id int(11) NOT NULL AUTO_INCREMENT,
-  nome varchar(200) NOT NULL,
-  PRIMARY KEY (id)
+create table categorias (
+	id int(11) primary key auto_increment,
+    nome varchar(255) not null
 );
 
-CREATE TABLE produtos (
-  id int(11) PRIMARY KEY AUTO_INCREMENT,
-  nome varchar(80) NOT NULL,
-  valor float NOT NULL,
-  categoria_id int(11) NOT NULL,
-  FOREIGN KEY (categoria_id) REFERENCES categorias (id)
+create table produtos (
+	id int(11) primary key auto_increment,
+    nome varchar(255) not null,
+    valor float not null,
+    categoria_id int(11) not null,
+    foreign key (categoria_id) references 
+    categorias(id)
 );
 
 
 -- na alteração
-CREATE TABLE `produtos` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `nome` varchar(80) NOT NULL,
-  `valor` float NOT NULL,
-  `categoria_id` int(11) NOT NULL,
-  PRIMARY KEY (`id`)
+create table produtos (
+	id int(11) primary key auto_increment,
+    nome varchar(255) not null,
+    valor float not null,
+    categoria_id int(11) not null
 );
 
 ALTER TABLE produtos
