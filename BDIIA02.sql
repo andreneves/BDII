@@ -58,6 +58,8 @@ RENAME TABLE clientes TO Meus_Clientes;
 -- DROP TABLE NomeDaTabela; 
 
 
+PAREI AQUIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
+
 -- Exemplo: 
 
 DROP TABLE clientes; -- deleta a tabela
