@@ -53,7 +53,7 @@ ADD valor float;
 ALTER TABLE produtos
 ADD observacao varchar(80);
 
-
+ PAREI AQUIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
 
 -----------------
 -- DROP COLUMN --

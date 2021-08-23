@@ -28,11 +28,28 @@ select * from clientes;
 -- renomear tabela
 RENAME TABLE clientes TO Meus_Clientes;
 
-select * from Meus_Clientes;
+-- select * from Meus_Clientes;
 
 -- excluir tabela
+DROP TABLE clientes;
 
 
+-- limpa todos os dados da tabela e volta o auto incremento para 1
+
+
+
+
+insert into clientes (id, nome, endereco, cidade, uf)
+values (6,'Teste Seis', 'Rua 2', 'sampa', 'SP');
+
+insert into clientes (nome, endereco, cidade, uf)
+values ('Teste Sete', 'Rua 2', 'sampa', 'SP');
+
+insert into clientes (id, nome, endereco, cidade, uf)
+values (1000,'Teste Mil', 'Rua 2', 'sampa', 'SP');
+
+insert into clientes (nome, endereco, cidade, uf)
+values ('Teste Mil e 1', 'Rua 2', 'sampa', 'SP');
 
 SHOW COLUMNS FROM clientes;
 
