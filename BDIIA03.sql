@@ -53,7 +53,7 @@ ADD valor float;
 ALTER TABLE produtos
 ADD observacao varchar(80);
 
- PAREI AQUIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
+
 
 -----------------
 -- DROP COLUMN --
@@ -82,6 +82,28 @@ DROP COLUMN descricao;
 
 ALTER TABLE produtos
 MODIFY COLUMN observacao varchar(255);
+
+alter table produtos
+modify column observacao TEXT;
+
+
+-- teste convertendo de float para inteiro
+-- converte, mas corta as casas decimais
+
+insert into produtos (nome, valor, observacao)
+values ('Timer', 10.34, 'observacao');
+
+alter table produtos
+modify column valor int(11);
+
+select * from produtos;
+
+
+-- se inserirmos um valor com casa decimal acima de 5 ele arredonda para o inteiro superior.
+-- No exemplo ele arredondou para 21
+insert into produtos (nome, valor, observacao)
+values ('Relógio', 20.72, 'Uma grande observacao para testar o que acontece quando inserimos um campo grande e depois convertemos para um campo menor');
+
 
 
 
