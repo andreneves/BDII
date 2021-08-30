@@ -98,11 +98,18 @@ modify column valor int(11);
 
 select * from produtos;
 
+alter table produtos
+modify column observacao varchar(50);
 
 -- se inserirmos um valor com casa decimal acima de 5 ele arredonda para o inteiro superior.
 -- No exemplo ele arredondou para 21
 insert into produtos (nome, valor, observacao)
 values ('Relógio', 20.72, 'Uma grande observacao para testar o que acontece quando inserimos um campo grande e depois convertemos para um campo menor');
+
+-- se inserirmos uma string maior e depois convertermos o campo para 
+-- um campo texto menor ele vai cortar o conteúdo para o novo tamanho.
+alter table produtos
+modify column observacao varchar(50);
 
 
 
