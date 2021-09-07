@@ -115,3 +115,5 @@ values ('Relógio', 20.72, 'Uma grande observacao para testar o que acontece qua
 alter table produtos
 modify column observacao varchar(50);
 
+-- ------------------------------------------------------------
+
