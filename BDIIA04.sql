@@ -61,7 +61,7 @@ ALTER TABLE produtos
 ADD CONSTRAINT PRIMARY KEY (id);
 
 ALTER TABLE produtos
-MODIFY COLUMN id int(11) NOT NULL AUTO_INCREMENT FIRST;
+MODIFY COLUMN id int(11) NOT NULL AUTO_INCREMENT; -- FIRST;
 
 -- inserindo dados para testar
 insert into produtos (nome) values ('camisa');
