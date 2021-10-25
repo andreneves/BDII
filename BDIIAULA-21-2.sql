@@ -271,3 +271,40 @@ MODIFY COLUMN id int(11) auto_increment;
 
 insert into usuarios (nome, email) 
 values ('Rafael', 'andr5@andr.com.br');
+
+-- FORENGN KEY
+
+create table categorias (
+	id int(11) primary key auto_increment,
+    nome varchar(255) not null
+);
+
+create table produtos (
+	id int(11) primary key auto_increment,
+    nome varchar(255) not null,
+    valor float not null,
+    categoria_id int(11) not null,
+    foreign key (categoria_id) references categorias(id)
+);
+
+insert into categorias (nome) values ('Eletronicos');
+insert into categorias (nome) values ('Informática');
+insert into categorias (nome) values ('Acessórios');
+
+select * from categorias;
+
+insert into produtos (nome, valor, categoria_id) 
+values ('mouse', 100, 1);
+insert into produtos (nome, valor, categoria_id) 
+values ('teclado', 200, 2);
+insert into produtos (nome, valor, categoria_id) 
+values ('Som JBL', 1500, 1);
+insert into produtos (nome, valor, categoria_id) 
+values ('Timer', 100, 3);
+insert into produtos (nome, valor, categoria_id) 
+values ('HD 1TB', 500, 2);
+insert into produtos (nome, valor, categoria_id) 
+values ('Webcam', 900, 3);
+
+select * from produtos;
+

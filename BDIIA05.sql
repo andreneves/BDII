@@ -144,9 +144,6 @@ DROP PRIMARY KEY;
 -- A tabela que contém a chave é chamada de tabela filho e a tabela que contém a chave candidata é chamada de tabela pai.
 
 
--- -->> AQUI 210517
-
-
 -- na criação
 create table categorias (
 	id int(11) primary key auto_increment,
@@ -158,8 +155,7 @@ create table produtos (
     nome varchar(255) not null,
     valor float not null,
     categoria_id int(11) not null,
-    foreign key (categoria_id) references 
-    categorias(id)
+    foreign key (categoria_id) references categorias(id)
 );
 
 
