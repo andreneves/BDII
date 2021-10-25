@@ -221,3 +221,53 @@ where id = 3;
 ALTER TABLE alunos
 ADD UNIQUE (email);
 
+--
+
+create database bd2;
+
+use bd2;
+
+CREATE TABLE usuarios (
+	id int,
+    nome varchar(255) NOT NULL,
+    email varchar(255) NOT NULL
+);
+
+SHOW COLUMNS FROM usuarios;
+
+ALTER TABLE usuarios
+ADD PRIMARY KEY(id);
+
+DROP TABLE usuarios;
+
+insert into usuarios (id, nome, email) 
+values (1, 'André', 'andr@andr.com.br');
+
+insert into usuarios (id, nome, email) 
+values (2, 'Bruno', 'andr2@andr.com.br');
+
+insert into usuarios (id, nome, email) 
+values (2, 'Ricardo', 'andr3@andr.com.br');
+
+insert into usuarios (id, nome, email) 
+values (NULL, 'Rodrigo', 'andr4@andr.com.br');
+
+select * from usuarios;
+
+UPDATE usuarios
+SET
+id = 3
+WHERE
+nome = 'Ricardo';
+
+UPDATE usuarios
+SET
+id = 4
+WHERE
+nome = 'Rodrigo';
+
+ALTER TABLE usuarios
+MODIFY COLUMN id int(11) auto_increment;
+
+insert into usuarios (nome, email) 
+values ('Rafael', 'andr5@andr.com.br');
