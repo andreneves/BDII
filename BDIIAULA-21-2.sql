@@ -315,26 +315,7 @@ create database bd2;
 
 use bd2;
 
-create table alunos (
-	id int primary key auto_increment,
-    nome varchar(255) not null,
-    cidade varchar(255) not null,
-    idade int,
-    check (idade >= 18)
-);
-
-insert into alunos (nome, cidade, idade) values 
-('André', 'Rio de Janeiro', 17);
-insert into alunos (nome, cidade, idade) values 
-('Paulo', 'São Paulo', 18);
-
-select * from alunos;
-
-
-
-create database bd2;
-
-use bd2;
+-- check na criacao
 
 create table alunos (
 	id int primary key auto_increment,
@@ -367,5 +348,39 @@ insert into inscricoes (nome, cidade, idade) values ('Pedro', 'Rio de Janeiro', 
 
 select *  from inscricoes;
 
+-- check alteracao
+
+create table alunos (
+	id int primary key auto_increment,
+    nome varchar(255) not null,
+    cidade varchar(255) not null,
+    idade int
+);
+
+create table inscricoes (
+	id int primary key auto_increment,
+    nome varchar(255) not null,
+    cidade varchar(255) not null,
+    idade int not null
+);
+
+-- alter table
+alter table alunos
+ADD CHECK (idade >= 18);
+
+insert into alunos (nome, cidade, idade) values 
+('André', 'Rio de Janeiro', 17);
+insert into alunos (nome, cidade, idade) values 
+('Paulo', 'São Paulo', 18);
+
+
+ALTER TABLE inscricoes
+ADD CONSTRAINT CHK_Inscricoes CHECK (idade >= 18 AND cidade = 'Rio de Janeiro');
+
+insert into inscricoes (nome, cidade, idade) values ('Rodrigo', 'São Paulo', 20);
+insert into inscricoes (nome, cidade, idade) values ('Vinicius', 'Rio de Janeiro', 16);
+insert into inscricoes (nome, cidade, idade) values ('Pedro', 'Rio de Janeiro', 21);
+
+select * from inscricoes;
 
 
