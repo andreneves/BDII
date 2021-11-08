@@ -308,3 +308,64 @@ values ('Webcam', 900, 3);
 
 select * from produtos;
 
+
+-- aula 6
+
+create database bd2;
+
+use bd2;
+
+create table alunos (
+	id int primary key auto_increment,
+    nome varchar(255) not null,
+    cidade varchar(255) not null,
+    idade int,
+    check (idade >= 18)
+);
+
+insert into alunos (nome, cidade, idade) values 
+('André', 'Rio de Janeiro', 17);
+insert into alunos (nome, cidade, idade) values 
+('Paulo', 'São Paulo', 18);
+
+select * from alunos;
+
+
+
+create database bd2;
+
+use bd2;
+
+create table alunos (
+	id int primary key auto_increment,
+    nome varchar(255) not null,
+    cidade varchar(255) not null,
+    idade int,
+    check (idade >= 18)
+);
+
+insert into alunos (nome, cidade, idade) values 
+('André', 'Rio de Janeiro', 17);
+insert into alunos (nome, cidade, idade) values 
+('Paulo', 'São Paulo', 18);
+
+select * from alunos;
+
+create table inscricoes (
+	id int primary key auto_increment,
+    nome varchar(255) not null,
+    cidade varchar(255) not null,
+    idade int not null,
+    CONSTRAINT CHK_Inscricoes CHECK (idade >= 18 AND cidade = 'Rio de Janeiro')
+);
+
+SHOW COLUMNS from inscricoes;
+
+insert into inscricoes (nome, cidade, idade) values ('Rodrigo', 'São Paulo', 20);
+insert into inscricoes (nome, cidade, idade) values ('Vinicius', 'Rio de Janeiro', 16);
+insert into inscricoes (nome, cidade, idade) values ('Pedro', 'Rio de Janeiro', 21);
+
+select *  from inscricoes;
+
+
+
