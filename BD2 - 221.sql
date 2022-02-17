@@ -2,3 +2,7 @@
 
 -- criar um banco de dados
 
+CREATE DATABASE bd2;
+
+USE bd2;
+
