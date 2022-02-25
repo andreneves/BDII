@@ -76,3 +76,8 @@ DROP TABLE clientes; -- deleta a tabela
 
 TRUNCATE TABLE clientes;
 
+
+
+-- para saber o valor do auto_increment
+SELECT AUTO_INCREMENT FROM information_schema.tables
+WHERE table_name = 'alunos' AND table_schema = 'bd3';
