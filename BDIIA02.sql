@@ -82,7 +82,3 @@ TRUNCATE TABLE clientes;
 SELECT AUTO_INCREMENT FROM information_schema.tables
 WHERE table_name = 'alunos' AND table_schema = 'bd3';
 
-
-
-TESTE
-
