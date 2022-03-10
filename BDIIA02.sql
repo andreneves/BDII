@@ -84,3 +84,5 @@ WHERE table_name = 'alunos' AND table_schema = 'bd3';
 
 
 
+TESTE
+
