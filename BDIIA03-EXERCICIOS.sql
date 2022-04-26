@@ -1,5 +1,6 @@
 -- EXERCICIOS
 
+
 -- 1) Execute a sequência de comandos
 -- Crie um banco de dados chamado bd2exercicios
 -- Diga que irá usar este banco de dados
