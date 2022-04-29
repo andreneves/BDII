@@ -7,7 +7,6 @@
 
 
 
-
 -- 2) Crie uma tabela chamada usuarios que deverá conter os seguintes campos: id, nome, email, senha e perfil. Leve em consideração os dados que serão inseridos no item seguinte.
 
 
