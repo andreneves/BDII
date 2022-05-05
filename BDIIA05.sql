@@ -64,6 +64,8 @@ CREATE TABLE usuarios (
 insert into usuarios (nome, email) values ('André', 'andr@andr.com.br');
 insert into usuarios (nome, email) values ('André 2', 'andr@andr.com.br');
 
+AQUIIIIIIII
+
 -- na alteração
 CREATE TABLE usuarios (
     id INT PRIMARY KEY AUTO_INCREMENT,
