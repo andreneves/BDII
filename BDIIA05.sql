@@ -64,7 +64,6 @@ CREATE TABLE usuarios (
 insert into usuarios (nome, email) values ('André', 'andr@andr.com.br');
 insert into usuarios (nome, email) values ('André 2', 'andr@andr.com.br');
 
-AQUIIIIII
 
 -- na alteração
 CREATE TABLE usuarios (
@@ -160,6 +159,7 @@ create table produtos (
     foreign key (categoria_id) references categorias(id)
 );
 
+AQUIIIIII
 
 -- na alteração
 create table produtos (
