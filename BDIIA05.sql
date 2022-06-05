@@ -159,8 +159,6 @@ create table produtos (
     foreign key (categoria_id) references categorias(id)
 );
 
-AQUIIIIII
-
 -- na alteração
 create table produtos (
 	id int(11) primary key auto_increment,
