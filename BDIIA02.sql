@@ -31,8 +31,14 @@ CREATE TABLE clientes (
     sobrenome varchar(100),
     endereco varchar(255),
     cidade varchar(50),
-    UF varchar(2)
+    uf varchar(2)
 );
+
+
+-- inserindo valores
+
+INSERT INTO clientes (nome, sobrenome, endereco, cidade, uf) 
+values ('André', 'Neves', 'Rua A', 'Rio de Janeiro', 'RJ');
 
 
 ------------------
