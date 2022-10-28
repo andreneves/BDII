@@ -80,6 +80,8 @@ DROP CHECK CHK_Alunos;
 
 -- ------------------------------------------------------------------------------------------------------------------
 
+AQUI
+
 -- DEFAULT
 -- valor padrão da coluna
 -- o campo é preenchido automaticamente caso não seja declarado um valor
