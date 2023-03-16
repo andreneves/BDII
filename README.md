@@ -1,8 +1,6 @@
 # BDII
 > Banco de dados II
 
-TESTE123
-
 ## BDII00
 
 # Sistema Gerenciador de Banco de Dados - SGBD
