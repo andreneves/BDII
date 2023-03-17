@@ -26,7 +26,7 @@ CREATE TABLE NomeDaTabela (
 -- Exemplo: 
 
 CREATE TABLE clientes (
-    id int,
+    id int primary key auto_increment,
     nome varchar(100),
     sobrenome varchar(100),
     endereco varchar(255),
