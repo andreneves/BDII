@@ -75,7 +75,7 @@ ADD CONSTRAINT CHK_Alunos CHECK (idade >= 18 AND cidade = 'Rio de Janeiro');
 
 -- drop
 ALTER TABLE alunos
-DROP CHECK CHK_Alunos; 
+DROP CONSTRAINT CHK_Alunos; 
 
 
 -- ------------------------------------------------------------------------------------------------------------------
