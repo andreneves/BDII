@@ -21,6 +21,7 @@ Novo teste em aula
 ## BDIIA01
 * CREATE DATABASE
 * DROP DATABASE
+* USE
 
 # Revisão tipo de dados
 `Data types` : <https://dev.mysql.com/doc/refman/8.0/en/data-types.html>
@@ -34,16 +35,36 @@ Novo teste em aula
 
 
 ## BDIIA02
-CREATE TABLE
-DROP TABLE
-TRUNCATE TABLE
+* CREATE TABLE
+* RENAME
+* DROP TABLE
+* TRUNCATE TABLE
+* AUTO_INCREMENT
 
+## BDIIA03
+* ALTER TABLE
+* ADD
+* ALTER
+* DROP
+* MODIFY / CHANGE
 
+## BDIIA04
+* SHOW COLUMNS FROM
+* retrições
+* Visão geral
 
+## BDIIA05
+* NOT NULL
+* UNIQUE
+* PRIMARY KEY
+* FOREIGN KEY - chave estrangeira
 
+## BDIIA06
+* CHECK 
+* DEFAULT
 
-ALTER TABLE
-ADD
-ALTER
-DROP
-MODIFY
+## BDIIA07
+* INDEX
+
+## BDIIA08
+* Normalização
