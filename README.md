@@ -17,12 +17,6 @@ Novo teste em aula
 
 `Workbench` : <https://www.mysql.com/products/workbench/>
 
-
-## BDIIA01
-* CREATE DATABASE
-* DROP DATABASE
-* USE
-
 # Revisão tipo de dados
 `Data types` : <https://dev.mysql.com/doc/refman/8.0/en/data-types.html>
 
@@ -33,6 +27,11 @@ Novo teste em aula
 
 ![](https://github.com/andreneves/BDII/blob/master/imagens/tipos_de_dados-tipos_primitivos3.jpg)
 
+
+## BDIIA01
+* CREATE DATABASE
+* DROP DATABASE
+* USE
 
 ## BDIIA02
 * CREATE TABLE
@@ -50,14 +49,14 @@ Novo teste em aula
 
 ## BDIIA04
 * SHOW COLUMNS FROM
-* retrições
-* Visão geral
+* RETRIÇÕES - CONSTRAINT
+* VISÃO GERAL
 
 ## BDIIA05
 * NOT NULL
 * UNIQUE
-* PRIMARY KEY
-* FOREIGN KEY - chave estrangeira
+* PRIMARY KEY - CHAVE PRIMÁRIA
+* FOREIGN KEY - CHAVE ESTRANGEIRA
 
 ## BDIIA06
 * CHECK 
@@ -67,4 +66,4 @@ Novo teste em aula
 * INDEX
 
 ## BDIIA08
-* Normalização
+* NORMALIZAÇÃO
