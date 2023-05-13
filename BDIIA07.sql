@@ -29,7 +29,7 @@ select COUNT(id) from alunos;
 select * 
 from alunos
 WHERE nome = 'Aluno2222';
--- demorou 0,015 seg
+-- demorou 0,016 seg
 
 
 create index idx_nome
@@ -44,6 +44,8 @@ WHERE nome = 'Aluno2222';
 -- drop
 alter table alunos
 drop index idx_nome;
+*/
+
 
 insert into alunos (nome, cidade, idade) values ('Aluno1', 'Rio de Janeiro', 20);
 insert into alunos (nome, cidade, idade) values ('Aluno2', 'Rio de Janeiro', 20);
