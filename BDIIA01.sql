@@ -34,4 +34,8 @@ USE bd2;
 
 -- Revisão dos tipos de dados
 
+
+-- Listar tabelas de um banco de dados
+show tables from bd2;
+
 -- Teste de proficiência
