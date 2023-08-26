@@ -39,3 +39,22 @@ values ('Sabão', 15, 20.6);
 insert into produtos (nome, quantidade, preco) 
 values ('Esponja', 20, 5.6);
 
+-- select 
+select * from produtos;
+
+select id, nome from produtos;
+
+select id, nome 
+from produtos 
+where id = 2;
+
+-- atualizar registro
+update produtos
+set nome = 'Sabão em pedra'
+where id = 2;
+
+update produtos
+set 
+nome = 'Esponja de aço',
+quantidade = 40
+where id = 3;
