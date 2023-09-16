@@ -137,3 +137,7 @@ values ('Reforma', 'Uma reforma', 150.45);
 -- simulando um erro de modificacao de coluna - FIM
 -- teste
 select * from servicos;
+
+-- criptografia
+
+SELECT SHA2('abc', 224);
