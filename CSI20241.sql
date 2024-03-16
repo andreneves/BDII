@@ -44,3 +44,17 @@ insert into produtos (nome, valor) values ('lapis', 30);
 
 -- selecionando dados
 select * from produtos;
+
+-- deletando tabela
+drop table produtos;
+
+-- renomear tabelas
+rename table produtos to meus_produtos;
+
+select * from meus_produtos;
+
+-- limpa os dados da tabela e volta o auto_increment para seu estado original
+truncate table meus_produtos;
+
+insert into meus_produtos (nome, valor) values ('lapiseira', 120);
+
